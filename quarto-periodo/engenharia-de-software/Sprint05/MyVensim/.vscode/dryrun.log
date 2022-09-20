@@ -1,0 +1,7 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/be/Documentos/ES1/Sprint05/MyVensim'
+g++ -std=c++11 -fPIC -shared ./bin/model.o ./bin/flow.o ./bin/system.o -o ./bin/libMyVensim.so
+cd ./bin/ && g++ -std=c++11 -fPIC ../src/main.cpp -o ./executable -L . -lMyVensim -Wl,-rpath .
+rm -rf ./bin/*.o *~
+make: Leaving directory '/home/be/Documentos/ES1/Sprint05/MyVensim'
+ 

@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_flow.html" title="Flow Interface." alt="" coords="5,81,57,108"/>
+<area shape="rect" id="node2" href="$class_imp_flow.html" title="ImpFlow Class." alt="" coords="105,81,183,108"/>
+<area shape="rect" id="node3" href="$class_complex.html" title="Complex Class." alt="" coords="254,5,334,32"/>
+<area shape="rect" id="node4" href="$class_exponential.html" title="Exponential Class." alt="" coords="245,56,343,83"/>
+<area shape="rect" id="node5" href="$class_logistical.html" title="Logistical Class." alt="" coords="252,107,336,133"/>
+<area shape="rect" id="node6" href="$class_unit_exponential.html" title="UnitExponential Class." alt="" coords="231,157,357,184"/>
+</map>

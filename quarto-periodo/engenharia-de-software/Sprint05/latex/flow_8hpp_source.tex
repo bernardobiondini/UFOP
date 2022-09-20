@@ -1,0 +1,32 @@
+\hypertarget{flow_8hpp_source}{}\doxysection{flow.\+hpp}
+\label{flow_8hpp_source}\index{src/include/flow.hpp@{src/include/flow.hpp}}
+\mbox{\hyperlink{flow_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef flow\_hpp}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define flow\_hpp}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{system_8hpp}{system.hpp}}"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_flow}{Flow}}\{}
+\DoxyCodeLine{19     \textcolor{keyword}{public}:}
+\DoxyCodeLine{24         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{\string~Flow}}()\{\}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{32         \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_flow_aa91a8025b6dbb27ee5137c7c9ad0c564}{getName}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{39         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{46         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{47         }
+\DoxyCodeLine{54         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_abb883bbe7937aa6df714cf1c364aa049}{setName}}(\textcolor{keywordtype}{string} name) = 0;}
+\DoxyCodeLine{61         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_a42ce99a961622788ae59bb73abad3bb3}{setSource}}(\mbox{\hyperlink{class_system}{System}}* source) = 0;}
+\DoxyCodeLine{68         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{setTarget}}(\mbox{\hyperlink{class_system}{System}}* target) = 0;}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{77         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_a02f2ba282534e3f0756a4e4dbefa7795}{conect}}(\mbox{\hyperlink{class_system}{System}} *, \mbox{\hyperlink{class_system}{System}} *) = 0;}
+\DoxyCodeLine{78         }
+\DoxyCodeLine{87         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_a59a51b935f1e72373f6a94aa3ccaf981}{execute}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{88 \};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

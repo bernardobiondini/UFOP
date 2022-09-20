@@ -1,0 +1,59 @@
+\hypertarget{imp_model_8hpp_source}{}\doxysection{imp\+Model.\+hpp}
+\label{imp_model_8hpp_source}\index{src/include/impModel.hpp@{src/include/impModel.hpp}}
+\mbox{\hyperlink{imp_model_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef impModel\_hpp}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define impModel\_hpp}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{model_8hpp}{model.hpp}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{imp_system_8hpp}{impSystem.hpp}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{imp_flow_8hpp}{impFlow.hpp}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{class_imp_model}{ImpModel}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_model}{Model}}\{}
+\DoxyCodeLine{24     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{25         vector<System*> \mbox{\hyperlink{class_imp_model_ad079bed69449388136e5771b11d1149c}{systems}}; }
+\DoxyCodeLine{26         vector<Flow*> \mbox{\hyperlink{class_imp_model_a37dc0f6bd093ae85cae6cf1d6ebfdfc7}{flows}}; }
+\DoxyCodeLine{27         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}{name}}; }
+\DoxyCodeLine{28         \textcolor{keyword}{static} vector<Model*> \mbox{\hyperlink{class_imp_model_a26ae7de0a5747f850792247eec4d5147}{models}};}
+\DoxyCodeLine{29         }
+\DoxyCodeLine{36         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imp_model_a9b9ad9aacb0b3a2a4f043063c6176b8c}{add}}(\mbox{\hyperlink{class_system}{System}} *system);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{44         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imp_model_a9b9ad9aacb0b3a2a4f043063c6176b8c}{add}}(\mbox{\hyperlink{class_flow}{Flow}} *flow);}
+\DoxyCodeLine{45     \textcolor{keyword}{public}:}
+\DoxyCodeLine{51         \mbox{\hyperlink{class_imp_model_a23c41c251e2fd28e872f29660c495177}{ImpModel}}();}
+\DoxyCodeLine{58         \mbox{\hyperlink{class_imp_model_a23c41c251e2fd28e872f29660c495177}{ImpModel}}(\mbox{\hyperlink{class_imp_model}{ImpModel}} \&copy);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{65         \mbox{\hyperlink{class_imp_model_a3f72684a358c625c7fa41ee9ef6c65a1}{\string~ImpModel}}();  }
+\DoxyCodeLine{66 }
+\DoxyCodeLine{73         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_imp_model_a4498580d41e39228017b6d94d8b3e4fc}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{80         \textcolor{keyword}{typedef} vector<System*>::iterator \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{systemIterator}};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{87         \textcolor{keyword}{typedef} vector<Flow*>::iterator \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flowIterator}};}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{95         \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{systemIterator}} \mbox{\hyperlink{class_imp_model_a2211cbfca4b722601e97fd5d224d41e6}{getBeginSystems}}(); }
+\DoxyCodeLine{96 }
+\DoxyCodeLine{103         \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{systemIterator}} \mbox{\hyperlink{class_imp_model_a69b4253b442a026a4854e5e0ee11638c}{getEndSystems}}(); }
+\DoxyCodeLine{104 }
+\DoxyCodeLine{111         \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flowIterator}} \mbox{\hyperlink{class_imp_model_ad14a714c2752f30804207a2fcce0f0e8}{getBeginFlows}}(); }
+\DoxyCodeLine{112 }
+\DoxyCodeLine{119         \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flowIterator}} \mbox{\hyperlink{class_imp_model_a6b2aac32ef6457143d09166f659f03c8}{getEndFlows}}(); }
+\DoxyCodeLine{120 }
+\DoxyCodeLine{127         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imp_model_a9ebeebbe8d3d76f23f7fed40d30c47ee}{setName}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}{name}});}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{137         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imp_model_a8e0eae79105661779f3348af90511f6a}{run}}(\textcolor{keywordtype}{double} initial\_time, \textcolor{keywordtype}{double} final\_time, \textcolor{keywordtype}{int} incr);}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{146         \mbox{\hyperlink{class_imp_model}{ImpModel}}\& \mbox{\hyperlink{class_imp_model_a569199ab98ee3c40c6e7e8ec8319d32a}{operator=}}(\mbox{\hyperlink{class_imp_model}{ImpModel}} \&model);}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148         \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_imp_model_ae2e88f9c43c04f7a703a6b5cb5673a8b}{createSystem}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}{name}}, \textcolor{keywordtype}{double} value);}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150         \textcolor{keyword}{static} \mbox{\hyperlink{class_model}{Model}}* \mbox{\hyperlink{class_imp_model_aa1a2ba02e101583ea5bf7ebe5b8fd63a}{createModel}}();}
+\DoxyCodeLine{151 \};}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

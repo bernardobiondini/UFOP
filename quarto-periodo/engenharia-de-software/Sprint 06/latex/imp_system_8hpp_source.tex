@@ -1,0 +1,72 @@
+\hypertarget{imp_system_8hpp_source}{}\doxysection{imp\+System.\+hpp}
+\label{imp_system_8hpp_source}\index{src/include/impSystem.hpp@{src/include/impSystem.hpp}}
+\mbox{\hyperlink{imp_system_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef impSystem\_hpp}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define impSystem\_hpp}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bridge_8hpp}{bridge.hpp}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{system_8hpp}{system.hpp}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_system_body}{SystemBody}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_body}{Body}}\{}
+\DoxyCodeLine{20     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{21         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_system_body_ac95aca9d3648f257855ca6436e7cb630}{name}}; }
+\DoxyCodeLine{22         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a82fcaefb88098be09dbc59bf8b012922}{value}}; }
+\DoxyCodeLine{24     \textcolor{keyword}{private}:}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{32     \mbox{\hyperlink{class_system_body_a147c54091a4184a5cfb99215702d86eb}{SystemBody}}(\mbox{\hyperlink{class_system_body}{SystemBody}} \&copy);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{41     \mbox{\hyperlink{class_system_body}{SystemBody}}\& operator=(\mbox{\hyperlink{class_system_body}{SystemBody}} \&system);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keyword}{public}:}
+\DoxyCodeLine{50         \mbox{\hyperlink{class_system_body_a147c54091a4184a5cfb99215702d86eb}{SystemBody}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{59         \mbox{\hyperlink{class_system_body_a147c54091a4184a5cfb99215702d86eb}{SystemBody}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_system_body_ac95aca9d3648f257855ca6436e7cb630}{name}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a82fcaefb88098be09dbc59bf8b012922}{value}});}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{66         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system_body_afb42a75de32fb4c683e3a0545be53089}{\string~SystemBody}}()\{\}}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{74         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_system_body_a6274f513d0a11f2eb28314d995f60d89}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{82         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_aaa79b2b5454c81ffd4020de4d0b9da6a}{getValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{90         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_body_a4127febc51ada004ffe252154179f903}{setName}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_system_body_ac95aca9d3648f257855ca6436e7cb630}{name}});}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{98         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_body_ab2cfe1da302b87bc1d7ad0661f3313b0}{setValue}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a82fcaefb88098be09dbc59bf8b012922}{value}});}
+\DoxyCodeLine{99 \};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 }
+\DoxyCodeLine{106 \textcolor{keyword}{class }\mbox{\hyperlink{class_system_handle}{SystemHandle}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_handle}{Handle}}<SystemBody>, \textcolor{keyword}{public} \mbox{\hyperlink{class_system}{System}}}
+\DoxyCodeLine{107 \{}
+\DoxyCodeLine{108 \textcolor{keyword}{public}:}
+\DoxyCodeLine{115     \mbox{\hyperlink{class_system_handle_ac94c5ab22ad29936f30a8dce7c401986}{SystemHandle}}(\textcolor{keywordtype}{string} name = \textcolor{stringliteral}{"{}"{}}, \textcolor{keywordtype}{double} value = 0)\{}
+\DoxyCodeLine{116         \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_a4127febc51ada004ffe252154179f903}{setName}}(name);}
+\DoxyCodeLine{117         \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_ab2cfe1da302b87bc1d7ad0661f3313b0}{setValue}}(value);}
+\DoxyCodeLine{118     \}}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{124     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system_handle_a4b917da05a077c741b5ddddadf2f5d95}{\string~SystemHandle}}()\{\};}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{131     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_handle_aa7206ceb4d5ceaf67271edb1b12e135d}{setValue}}(\textcolor{keywordtype}{double} value) \{}
+\DoxyCodeLine{132         \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_ab2cfe1da302b87bc1d7ad0661f3313b0}{setValue}}(value);}
+\DoxyCodeLine{133     \}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{140     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_handle_aeb69190853dc47d4c73ccd3928bfc3a1}{getValue}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{141         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_aaa79b2b5454c81ffd4020de4d0b9da6a}{getValue}}();}
+\DoxyCodeLine{142     \}}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{149     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_system_handle_ae0e8c19df92e41d60f2156562fd2bd52}{getName}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{150         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_a6274f513d0a11f2eb28314d995f60d89}{getName}}();}
+\DoxyCodeLine{151     \}}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{158     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_handle_aa8da8c60723c4a7dd3457419a2527c4f}{setName}}(\textcolor{keywordtype}{string} name)\{}
+\DoxyCodeLine{159         \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_a4127febc51ada004ffe252154179f903}{setName}}(name);}
+\DoxyCodeLine{160     \}}
+\DoxyCodeLine{161     }
+\DoxyCodeLine{162 \};}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

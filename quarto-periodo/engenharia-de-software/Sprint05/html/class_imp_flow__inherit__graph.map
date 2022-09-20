@@ -1,0 +1,8 @@
+<map id="ImpFlow" name="ImpFlow">
+<area shape="rect" id="node1" title="ImpFlow Class." alt="" coords="232,248,345,531"/>
+<area shape="rect" id="node3" href="$class_complex.html" title="Complex Class." alt="" coords="5,579,121,685"/>
+<area shape="rect" id="node4" href="$class_exponential.html" title="Exponential Class." alt="" coords="145,579,280,685"/>
+<area shape="rect" id="node5" href="$class_logistical.html" title="Logistical Class." alt="" coords="305,579,425,685"/>
+<area shape="rect" id="node6" href="$class_unit_exponential.html" title="UnitExponential Class." alt="" coords="449,579,611,685"/>
+<area shape="rect" id="node2" href="$class_flow.html" title="Flow Interface." alt="" coords="233,5,345,200"/>
+</map>

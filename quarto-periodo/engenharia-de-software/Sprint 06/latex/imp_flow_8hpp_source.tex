@@ -1,0 +1,102 @@
+\hypertarget{imp_flow_8hpp_source}{}\doxysection{imp\+Flow.\+hpp}
+\label{imp_flow_8hpp_source}\index{src/include/impFlow.hpp@{src/include/impFlow.hpp}}
+\mbox{\hyperlink{imp_flow_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef impFlow\_hpp}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define impFlow\_hpp}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define POP\_MAX 70}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{flow_8hpp}{flow.hpp}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bridge_8hpp}{bridge.hpp}}"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{class_flow_body}{FlowBody}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_body}{Body}}\{}
+\DoxyCodeLine{24     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{25         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_flow_body_a71d618d66f2da215d0f712ea6a757323}{name}}; }
+\DoxyCodeLine{26         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_body_a095724b7ccc2b7972e28b6e66b879932}{currentValue}}; }
+\DoxyCodeLine{27         \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_body_a7c46fc66ff02f18c387535e914337c82}{source}}; }
+\DoxyCodeLine{28         \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_body_a4a5d71f46863ff5e9d07161973817a34}{target}}; }
+\DoxyCodeLine{30     \textcolor{keyword}{private}:}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_flow_body}{FlowBody}}* operator=(\textcolor{keyword}{const} \mbox{\hyperlink{class_flow_body}{FlowBody}}* flow);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{44         \mbox{\hyperlink{class_flow_body_af7c4dc7b257284ba66176985df9ad544}{FlowBody}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_flow_body}{FlowBody}}* flow);}
+\DoxyCodeLine{45     }
+\DoxyCodeLine{46     \textcolor{keyword}{public}:}
+\DoxyCodeLine{52         \mbox{\hyperlink{class_flow_body_af7c4dc7b257284ba66176985df9ad544}{FlowBody}}();}
+\DoxyCodeLine{59         \mbox{\hyperlink{class_flow_body_af7c4dc7b257284ba66176985df9ad544}{FlowBody}}(\mbox{\hyperlink{class_flow_body}{FlowBody}} \&copy);}
+\DoxyCodeLine{68         \mbox{\hyperlink{class_flow_body_af7c4dc7b257284ba66176985df9ad544}{FlowBody}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_flow_body_a71d618d66f2da215d0f712ea6a757323}{name}}, \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_body_a7c46fc66ff02f18c387535e914337c82}{source}}, \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_body_a4a5d71f46863ff5e9d07161973817a34}{target}});}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{75         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_flow_body_a125d455dbb52f813ecacc5ca46c6362b}{\string~FlowBody}}()\{\}}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{83         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_flow_body_af4ae72e8c2ec05eeb54f28617b2dca61}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{90         \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_body_a73d79b44f545683272b888963469f9d0}{getSource}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{97         \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_body_a437ebb62001b40c57cc0bf3effd8a431}{getTarget}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{105         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_body_aa6991ecb893457b14b25ddcf904b0546}{setName}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_flow_body_a71d618d66f2da215d0f712ea6a757323}{name}});}
+\DoxyCodeLine{112         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_body_aa50a239e37120f248e8f819e0310a088}{setSource}}(\mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_body_a7c46fc66ff02f18c387535e914337c82}{source}});}
+\DoxyCodeLine{119         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_body_ac8da156892f3cc43d079778fc8067054}{setTarget}}(\mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_body_a4a5d71f46863ff5e9d07161973817a34}{target}});}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{128         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_body_a2fac58ed6a9feb9ba5aad3b0fd3dc490}{conect}}(\mbox{\hyperlink{class_system}{System}} *, \mbox{\hyperlink{class_system}{System}} *);}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{138         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_body_a318c83c74344b3806e15e13355dfcdee}{execute}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{139 \};}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141 \textcolor{keyword}{template} <\textcolor{keyword}{typename} F\_IMPL>}
+\DoxyCodeLine{142 \textcolor{keyword}{class }\mbox{\hyperlink{class_flow_handle}{FlowHandle}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_handle}{Handle}}<F\_IMPL>, \textcolor{keyword}{public} \mbox{\hyperlink{class_flow}{Flow}} \{}
+\DoxyCodeLine{143     \textcolor{keyword}{public}:}
+\DoxyCodeLine{151         \mbox{\hyperlink{class_flow_handle}{FlowHandle<F\_IMPL>}}(\textcolor{keywordtype}{string} name = \textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{class_system}{System}} *s = NULL, \mbox{\hyperlink{class_system}{System}} *t = NULL)\{}
+\DoxyCodeLine{152             this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setName(name);}
+\DoxyCodeLine{153             this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setSource(s);}
+\DoxyCodeLine{154             this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setTarget(t);}
+\DoxyCodeLine{155         \}}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{161         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_flow_handle_adb70dc97ea3a630bfb9d850f1028c72d}{\string~FlowHandle}}()\{\};}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{168         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_flow_handle_ad3667fa9db1d728d476f02216a1f7c41}{getName}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{169             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>getName();}
+\DoxyCodeLine{170         \}}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{177         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_handle_ae7a34a034972f65cf56520c18fa27039}{setName}}(\textcolor{keywordtype}{string} name) \{}
+\DoxyCodeLine{178             this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setName(name);}
+\DoxyCodeLine{179         \}}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{186         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_handle_a1fb867301dae820d43769d98b407471b}{getCurrentValue}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{187             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>getCurrentValue();}
+\DoxyCodeLine{188         \}}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{195         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_handle_a97f11ad20b42ba76b48784985de1a240}{setCurrentValue}}(\textcolor{keywordtype}{double} value) \{}
+\DoxyCodeLine{196             this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setCurrentValue(value);}
+\DoxyCodeLine{197         \}}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{204         \mbox{\hyperlink{class_system}{System}} * \mbox{\hyperlink{class_flow_handle_a7102423b65992dd129827d30807dd858}{getSource}}(\textcolor{keywordtype}{void})\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{205             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>getSource();}
+\DoxyCodeLine{206         \}}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{213         \mbox{\hyperlink{class_system}{System}} * \mbox{\hyperlink{class_flow_handle_ad4b2f2499d8093a1dc7ffaa494ad5a58}{getTarget}}(\textcolor{keywordtype}{void})\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{214             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>getTarget();}
+\DoxyCodeLine{215         \}}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{222         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_handle_a7090623c5652e67219408afe5a3fda12}{setSource}}(\mbox{\hyperlink{class_system}{System}} * source) \{}
+\DoxyCodeLine{223         this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setSource(source);}
+\DoxyCodeLine{224         \}}
+\DoxyCodeLine{225 }
+\DoxyCodeLine{231         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_handle_aa7249162a7191b5ad9f1afbd250a5945}{setTarget}}(\mbox{\hyperlink{class_system}{System}} * target) \{}
+\DoxyCodeLine{232             this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setTarget(target);}
+\DoxyCodeLine{233         \}}
+\DoxyCodeLine{234 }
+\DoxyCodeLine{242         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_handle_ad6b0d9238f2533f36d6c6918a3f83562}{conect}}(\mbox{\hyperlink{class_system}{System}} *source = NULL, \mbox{\hyperlink{class_system}{System}}* target = NULL) \{}
+\DoxyCodeLine{243             this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>connect(source, target);}
+\DoxyCodeLine{244         \}}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{251         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_handle_af2343772b734866dc18b88b97a342407}{execute}}()\textcolor{keyword}{ const  }\{}
+\DoxyCodeLine{252             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>execute();}
+\DoxyCodeLine{253         \}}
+\DoxyCodeLine{254 }
+\DoxyCodeLine{255 \};}
+\DoxyCodeLine{256 }
+\DoxyCodeLine{257 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

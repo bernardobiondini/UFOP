@@ -1,0 +1,7 @@
+<map id="unit_Model_getName" name="unit_Model_getName">
+<area shape="rect" id="node1" title="Unit Model GetName Test." alt="" coords="5,31,165,57"/>
+<area shape="rect" id="node2" href="$class_model.html#accd28300871325fce68d551cebf27220" title="CreateModel." alt="" coords="213,5,363,32"/>
+<area shape="rect" id="node5" href="$class_model.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Model Get Name Method." alt="" coords="223,56,353,83"/>
+<area shape="rect" id="node3" href="$class_imp_model.html#aa1a2ba02e101583ea5bf7ebe5b8fd63a" title="ImpSsytem CreateModel Method." alt="" coords="411,5,585,32"/>
+<area shape="rect" id="node4" href="$class_imp_model.html#a23c41c251e2fd28e872f29660c495177" title="ImpModel Default Constructor." alt="" coords="633,5,792,32"/>
+</map>

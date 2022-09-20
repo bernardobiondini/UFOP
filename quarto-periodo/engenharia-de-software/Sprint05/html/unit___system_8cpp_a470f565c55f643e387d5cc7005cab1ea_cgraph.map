@@ -1,0 +1,5 @@
+<map id="unit_System_setName" name="unit_System_setName">
+<area shape="rect" id="node1" title="Unit System SetName Test." alt="" coords="5,31,175,57"/>
+<area shape="rect" id="node2" href="$class_imp_system.html#aa6525558dd5f7ab9cac32780ea099e55" title="ImpSystem Get Name Method." alt="" coords="223,5,387,32"/>
+<area shape="rect" id="node3" href="$class_imp_system.html#ae415c83acdaf936112a740c5831a1c10" title="ImpSystem Set Name Method." alt="" coords="223,56,386,83"/>
+</map>

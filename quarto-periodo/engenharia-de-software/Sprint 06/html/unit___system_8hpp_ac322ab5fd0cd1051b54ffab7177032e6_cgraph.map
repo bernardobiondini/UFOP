@@ -1,0 +1,5 @@
+<map id="unit_System_setValue" name="unit_System_setValue">
+<area shape="rect" id="node1" title="Unit System SetValue Test." alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$class_system_body.html#aaa79b2b5454c81ffd4020de4d0b9da6a" title="SystemBody Get Value Method." alt="" coords="220,5,391,32"/>
+<area shape="rect" id="node3" href="$class_system_body.html#ab2cfe1da302b87bc1d7ad0661f3313b0" title="SystemBody Set Value Method." alt="" coords="221,56,390,83"/>
+</map>

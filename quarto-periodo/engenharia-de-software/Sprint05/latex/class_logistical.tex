@@ -1,0 +1,115 @@
+\hypertarget{class_logistical}{}\doxysection{Logistical Class Reference}
+\label{class_logistical}\index{Logistical@{Logistical}}
+
+
+\mbox{\hyperlink{class_logistical}{Logistical}} Class.  
+
+
+
+
+{\ttfamily \#include $<$functional\+\_\+tests.\+hpp$>$}
+
+
+
+Inheritance diagram for Logistical\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_logistical__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Logistical\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_logistical__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logistical_a22f43424e39967ea7cebd29b37963e1a}{Logistical}} (string \mbox{\hyperlink{class_imp_flow_aff016dba27ad6d1bb15ca7193fae7e45}{name}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_imp_flow_ab31b57764fb2d771fd54802b9848ff05}{source}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_imp_flow_ab7de349d6a16c6f66852b2a7261954c5}{target}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_logistical}{Logistical}} Constructor parameters of string, \mbox{\hyperlink{class_system}{System}} and \mbox{\hyperlink{class_system}{System}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logistical_a55dff5c00b37b31f4c3e0625a3658303}{$\sim$\+Logistical}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_logistical}{Logistical}} Destructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_logistical_a490e0774338bd30c062e88d51d72be23}{execute}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_logistical}{Logistical}} Overriding Execute Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_logistical}{Logistical}} Class. 
+
+It\textquotesingle{}s one of \mbox{\hyperlink{class_flow}{Flow}}\textquotesingle{}s children. It overrides the execute method so the value of the Target \mbox{\hyperlink{class_system}{System}} can be modified and the dynamics works. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logistical_a22f43424e39967ea7cebd29b37963e1a}\label{class_logistical_a22f43424e39967ea7cebd29b37963e1a}} 
+\index{Logistical@{Logistical}!Logistical@{Logistical}}
+\index{Logistical@{Logistical}!Logistical@{Logistical}}
+\doxysubsubsection{\texorpdfstring{Logistical()}{Logistical()}}
+{\footnotesize\ttfamily Logistical\+::\+Logistical (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{target }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_logistical}{Logistical}} Constructor parameters of string, \mbox{\hyperlink{class_system}{System}} and \mbox{\hyperlink{class_system}{System}}. 
+
+All of the attributes will receive its values frm the parameters 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em source} & \\
+\hline
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_logistical_a55dff5c00b37b31f4c3e0625a3658303}\label{class_logistical_a55dff5c00b37b31f4c3e0625a3658303}} 
+\index{Logistical@{Logistical}!````~Logistical@{$\sim$Logistical}}
+\index{````~Logistical@{$\sim$Logistical}!Logistical@{Logistical}}
+\doxysubsubsection{\texorpdfstring{$\sim$Logistical()}{~Logistical()}}
+{\footnotesize\ttfamily Logistical\+::$\sim$\+Logistical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_logistical}{Logistical}} Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logistical_a490e0774338bd30c062e88d51d72be23}\label{class_logistical_a490e0774338bd30c062e88d51d72be23}} 
+\index{Logistical@{Logistical}!execute@{execute}}
+\index{execute@{execute}!Logistical@{Logistical}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily double Logistical\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_logistical}{Logistical}} Overriding Execute Method. 
+
+\begin{DoxyReturn}{Returns}
+double
+\end{DoxyReturn}
+Returns the value of target system multiplied by (1 -\/ (target system value / 70)) \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_imp_flow_a68fa98af9ef6f236bfdce24c92ff5e04}{Imp\+Flow}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_logistical_a490e0774338bd30c062e88d51d72be23_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+test/functional/\mbox{\hyperlink{functional__tests_8hpp}{functional\+\_\+tests.\+hpp}}\item 
+test/functional/\mbox{\hyperlink{functional__tests_8cpp}{functional\+\_\+tests.\+cpp}}\end{DoxyCompactItemize}

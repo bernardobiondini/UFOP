@@ -1,0 +1,166 @@
+\hypertarget{class_system}{}\doxysection{System Class Reference}
+\label{class_system}\index{System@{System}}
+
+
+\mbox{\hyperlink{class_system}{System}} Interface.  
+
+
+
+
+{\ttfamily \#include $<$system.\+hpp$>$}
+
+
+
+Inheritance diagram for System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_system__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_system__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_system_a2fc0f34023977cab9b628aa9f734d88c}{$\sim$\+System}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_system}{System}} Destructor. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{get\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_system}{System}} Get Name Method. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{get\+Value}} () const =0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_system}{System}} Get Value Method. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_system_afe381855cfc606c7d109f590396928e7}{set\+Name}} (string name)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_system}{System}} Set Name Method. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_system_a7421d2e6970a0c4169a2febe254f2060}{set\+Value}} (double value)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_system}{System}} Set Value Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_system}{System}} Interface. 
+
+Responsible for define the \mbox{\hyperlink{class_system}{System}} structure, its methods but not the implementation 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_system_a2fc0f34023977cab9b628aa9f734d88c}\label{class_system_a2fc0f34023977cab9b628aa9f734d88c}} 
+\index{System@{System}!````~System@{$\sim$System}}
+\index{````~System@{$\sim$System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{$\sim$System()}{~System()}}
+{\footnotesize\ttfamily virtual System\+::$\sim$\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_system}{System}} Destructor. 
+
+Following the Canonical Class Form 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_system_ab4f23c21832d6bbef462a5a20b296912}\label{class_system_ab4f23c21832d6bbef462a5a20b296912}} 
+\index{System@{System}!getName@{getName}}
+\index{getName@{getName}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string System\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_system}{System}} Get Name Method. 
+
+Returns the \mbox{\hyperlink{class_system}{System}}\textquotesingle{}s name \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_imp_system_aa6525558dd5f7ab9cac32780ea099e55}{Imp\+System}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_ab4f23c21832d6bbef462a5a20b296912_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_system_a41b673faa6c199eb8e4f204639fab4f2}\label{class_system_a41b673faa6c199eb8e4f204639fab4f2}} 
+\index{System@{System}!getValue@{getValue}}
+\index{getValue@{getValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily virtual double System\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_system}{System}} Get Value Method. 
+
+Returns the \mbox{\hyperlink{class_system}{System}}\textquotesingle{}s value \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_imp_system_a17d1f417497886ca0cc059b44954c5d0}{Imp\+System}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_a41b673faa6c199eb8e4f204639fab4f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_system_afe381855cfc606c7d109f590396928e7}\label{class_system_afe381855cfc606c7d109f590396928e7}} 
+\index{System@{System}!setName@{setName}}
+\index{setName@{setName}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void System\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_system}{System}} Set Name Method. 
+
+Receives a string name and attributes it to \mbox{\hyperlink{class_system}{System}}\textquotesingle{}s name 
+\begin{DoxyParams}{Parameters}
+{\em name} & description \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_imp_system_ae415c83acdaf936112a740c5831a1c10}{Imp\+System}}.
+
+\mbox{\Hypertarget{class_system_a7421d2e6970a0c4169a2febe254f2060}\label{class_system_a7421d2e6970a0c4169a2febe254f2060}} 
+\index{System@{System}!setValue@{setValue}}
+\index{setValue@{setValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily virtual void System\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_system}{System}} Set Value Method. 
+
+Receives a double value and attributes it to \mbox{\hyperlink{class_system}{System}}\textquotesingle{}s value 
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_imp_system_a3d0607ccf8d1e7ec0f3276236538c50d}{Imp\+System}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_a7421d2e6970a0c4169a2febe254f2060_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{system_8hpp}{system.\+hpp}}\end{DoxyCompactItemize}

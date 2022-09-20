@@ -1,0 +1,9 @@
+<map id="ImpFlow::getName" name="ImpFlow::getName">
+<area shape="rect" id="node1" title="ImpFlow Get Name Method." alt="" coords="715,56,860,83"/>
+<area shape="rect" id="node2" href="$class_imp_flow.html#af4bb1d3b67021fe944a5aa1698f25608" title="ImpFlow Copy Constructor." alt="" coords="521,5,661,32"/>
+<area shape="rect" id="node3" href="$class_imp_flow.html#a0f66e6debe9555f22e1a7ba1b24d09fd" title="ImpFlow Assignment operator." alt="" coords="516,56,667,83"/>
+<area shape="rect" id="node4" href="$unit___flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title="Unit Flow SetName Test." alt="" coords="516,107,667,133"/>
+<area shape="rect" id="node5" href="$unit___flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc" title="Unit Flow Tests." alt="" coords="324,107,468,133"/>
+<area shape="rect" id="node6" href="$unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a" title="Run Unit Tests Globals." alt="" coords="108,107,276,133"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main." alt="" coords="5,107,60,133"/>
+</map>

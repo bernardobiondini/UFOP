@@ -1,0 +1,52 @@
+\hypertarget{imp_model_8hpp_source}{}\doxysection{imp\+Model.\+hpp}
+\label{imp_model_8hpp_source}\index{src/impModel.hpp@{src/impModel.hpp}}
+\mbox{\hyperlink{imp_model_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef impModel\_hpp}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define impModel\_hpp}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{model_8hpp}{model.hpp}}"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_imp_model}{ImpModel}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_model}{Model}}\{}
+\DoxyCodeLine{22     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{23         vector<System*> \mbox{\hyperlink{class_imp_model_ad079bed69449388136e5771b11d1149c}{systems}}; }
+\DoxyCodeLine{24         vector<Flow*> \mbox{\hyperlink{class_imp_model_a37dc0f6bd093ae85cae6cf1d6ebfdfc7}{flows}}; }
+\DoxyCodeLine{25         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}{name}}; }
+\DoxyCodeLine{26     \textcolor{keyword}{public}:}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_imp_model_a23c41c251e2fd28e872f29660c495177}{ImpModel}}();}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_imp_model_a23c41c251e2fd28e872f29660c495177}{ImpModel}}(\mbox{\hyperlink{class_imp_model}{ImpModel}} \&copy);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{46         \mbox{\hyperlink{class_imp_model_a3f72684a358c625c7fa41ee9ef6c65a1}{\string~ImpModel}}();  }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{54         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_imp_model_a4498580d41e39228017b6d94d8b3e4fc}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{61         \textcolor{keyword}{typedef} vector<System*>::iterator \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{systemIterator}};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{68         \textcolor{keyword}{typedef} vector<Flow*>::iterator \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flowIterator}};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{76         \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{systemIterator}} \mbox{\hyperlink{class_imp_model_a2211cbfca4b722601e97fd5d224d41e6}{getBeginSystems}}(); }
+\DoxyCodeLine{77 }
+\DoxyCodeLine{84         \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{systemIterator}} \mbox{\hyperlink{class_imp_model_a69b4253b442a026a4854e5e0ee11638c}{getEndSystems}}(); }
+\DoxyCodeLine{85 }
+\DoxyCodeLine{92         \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flowIterator}} \mbox{\hyperlink{class_imp_model_ad14a714c2752f30804207a2fcce0f0e8}{getBeginFlows}}(); }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{100         \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flowIterator}} \mbox{\hyperlink{class_imp_model_a6b2aac32ef6457143d09166f659f03c8}{getEndFlows}}(); }
+\DoxyCodeLine{101 }
+\DoxyCodeLine{108         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imp_model_a9ebeebbe8d3d76f23f7fed40d30c47ee}{setName}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}{name}});}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{116         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imp_model_a9b9ad9aacb0b3a2a4f043063c6176b8c}{add}}(\mbox{\hyperlink{class_system}{System}} *system);}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{124         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imp_model_a9b9ad9aacb0b3a2a4f043063c6176b8c}{add}}(\mbox{\hyperlink{class_flow}{Flow}} *flow);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{134         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imp_model_a7c7aa99561abc1aa800c7ba6e6a614cb}{execute}}(\textcolor{keywordtype}{double} initial\_time, \textcolor{keywordtype}{double} final\_time, \textcolor{keywordtype}{int} incr);}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{143         \mbox{\hyperlink{class_imp_model}{ImpModel}}\& \mbox{\hyperlink{class_imp_model_a569199ab98ee3c40c6e7e8ec8319d32a}{operator=}}(\mbox{\hyperlink{class_imp_model}{ImpModel}} \&model);}
+\DoxyCodeLine{144 \};}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

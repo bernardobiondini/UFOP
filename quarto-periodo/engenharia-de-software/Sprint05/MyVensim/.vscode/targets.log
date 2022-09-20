@@ -1,0 +1,586 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue May 31 17:09:56 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/be/Documentos/ES1/Sprint05/MyVensim
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/97
+# environment
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"74ce6549a467d1dfaba55fb5394742c9.pt-br","_translationsConfigFile":"/home/be/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/tcf.json","_cacheRoot":"/home/be/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br","_resolvedLanguagePackCoreLocation":"/home/be/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/be/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/corrupted.info","_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:47773
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+JAVA_HOME = /usr/lib/jvm/jdk-11.0.12
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+USERNAME = be
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=1b330b5e527985de608e50576294f33d
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+_ = /snap/code/97/usr/share/code/code
+# environment
+MANAGERPID = 1632
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/be
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/be/.yarn/bin:/home/be/.config/yarn/global/node_modules/.bin:/home/be/.cabal/bin:/home/be/.ghcup/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/jdk-11.0.12/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/Computador-Be:@/tmp/.ICE-unix/1852,unix/Computador-Be:/tmp/.ICE-unix/1852
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/be/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/97
+# environment
+SNAP_VERSION = c3511e6c
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 463e2fd6392e44f5ba272969fa8f8d4f
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 25340
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/be/Documentos/ES1/Sprint05/MyVensim
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 1812
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/be
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/be/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LOGNAME = be
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = lIPzSYjuyhZWWMsG-5EpzrsrAA0N7fFGkFT75Jn8ZH1HN2Ua9RGG
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/be/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# environment
+SNAP_REAL_HOME = /home/be
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/be/snap/code/97
+# environment
+SHLVL = 0
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-70b6c9e4-895c-49e6-a131-71c5fead66d5.sock
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = be
+# environment
+SNAP_REVISION = 97
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = pt_BR:pt:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-76be7676-1.67.2-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = lIPzSYjuyhZWWMsG-5EpzrsrAA0N7fFGkFT75Jn8ZH1HN2Ua9RGG
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_NAME = code
+# environment
+LC_ALL = C
+# environment
+DBUS_STARTER_BUS_TYPE = session
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+VSCODE_PID = 25386
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=1b330b5e527985de608e50576294f33d
+# variable set hash-table stats:
+# Load=124/1024=12%, Rehash=0, Collisions=19/152=12%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2050, inode 26498980): 8 files, no impossibilities.
+
+# 8 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+ 
+bin/unit_Flow.o: test/unit/unit_Flow.cpp test/unit/unit_Flow.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+	cd ./bin/ && g++ -std=c++11 -fPIC -c ../test/unit/unit_Flow.cpp -o ./unit_Flow.o
+
+# Not a target:
+test/unit/unit_Flow.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/unit_Model.o: test/unit/unit_Model.cpp test/unit/unit_Model.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	cd ./bin/ && g++ -std=c++11 -fPIC -c ../test/unit/unit_Model.cpp -o ./unit_Model.o
+
+# Not a target:
+src/include/system.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-20 18:15:03
+#  File has been updated.
+#  Successfully updated.
+
+all: bin/MyVensim.so bin/unit_tests bin/functional_tests bin/executable
+ 
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 2):
+	rm -rf ./bin/*.o *~
+
+# Not a target:
+test/unit/unit_Model.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test/functional/functional_tests.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/include/impSystem.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-20 18:08:26
+#  File has been updated.
+#  Successfully updated.
+
+bin/executable:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	cd ./bin/ && g++ -std=c++11 -fPIC ../src/main.cpp -o ./executable -L . -lMyVensim -Wl,-rpath .
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 17:08:47.12000709
+#  File has been updated.
+#  Successfully updated.
+
+run_unit:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 43):
+	./bin/unit_tests
+
+# Not a target:
+src/include/impModel.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-30 21:47:56.746472885
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/include/impFlow.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-26 12:45:35.359081948
+#  File has been updated.
+#  Successfully updated.
+
+bin/system.o: src/lib/impSystem.cpp src/include/impSystem.hpp src/include/system.hpp
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-31 17:08:00.99153769
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 34):
+	g++ -std=c++11 -fPIC -c ./src/lib/impSystem.cpp -o ./bin/system.o
+
+# Not a target:
+test/functional/main.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run_functional:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	./bin/functional_tests
+
+bin/functional_tests: test/functional/main.cpp test/functional/functional_tests.cpp test/functional/functional_tests.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 13):
+	cd ./bin/ && g++ -std=c++11 -fPIC ../test/functional/main.cpp ../test/functional/functional_tests.cpp -o ./functional_tests -L . -lMyVensim -Wl,-rpath .
+
+bin/MyVensim.so: bin/model.o bin/flow.o bin/system.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := bin/MyVensim.so
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := bin/model.o bin/flow.o bin/system.o
+# automatic
+# | := 
+# automatic
+# < := bin/model.o
+# automatic
+# ^ := bin/model.o bin/flow.o bin/system.o
+# automatic
+# ? := bin/model.o bin/flow.o bin/system.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 37):
+	g++ -std=c++11 -fPIC -shared ./bin/model.o ./bin/flow.o ./bin/system.o -o ./bin/libMyVensim.so
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/include/flow.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-20 17:27:30
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 40):
+	rm -rf ./bin/*.o ./bin/*~ ./bin/*.so
+
+# Not a target:
+test/unit/unit_tests.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/include/model.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-30 21:51:32.117671771
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+test/unit/main.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test/unit/unit_System.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lib/impSystem.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 09:08:35.349199521
+#  File has been updated.
+#  Successfully updated.
+
+bin/unit_tests: test/unit/main.cpp test/unit/unit_tests.cpp test/unit/unit_tests.hpp bin/unit_Model.o bin/unit_Flow.o bin/unit_System.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	cd ./bin/ && g++ -std=c++11 -fPIC ../test/unit/main.cpp ../test/unit/unit_tests.cpp ./unit_Model.o ./unit_Flow.o ./unit_System.o -o ./unit_tests -L . -lMyVensim -Wl,-rpath .
+
+bin/unit_System.o: test/unit/unit_System.cpp test/unit/unit_System.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	cd ./bin/ && g++ -std=c++11 -fPIC -c ../test/unit/unit_System.cpp -o ./unit_System.o
+
+# Not a target:
+test/unit/unit_tests.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test/unit/unit_System.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lib/impModel.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 16:16:25.167225476
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/lib/impFlow.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 15:24:04.935128444
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+test/unit/unit_Flow.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/flow.o: src/lib/impFlow.cpp src/include/impFlow.hpp src/include/flow.hpp bin/system.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-31 17:08:01.551595939
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 31):
+	g++ -std=c++11 -fPIC -c ./src/lib/impFlow.cpp -o ./bin/flow.o
+
+documentation: bin/executable
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	doxygen ./documentation/doxygen/.cfg
+	cd ./documentation/latex && make
+	cp ./documentation/latex/refman.pdf ./documentation/manual.pdf
+
+# Not a target:
+test/unit/unit_Model.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/model.o: src/lib/impModel.cpp src/include/impModel.hpp src/include/model.hpp bin/flow.o bin/system.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-31 17:08:02.383682347
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 28):
+	g++ -std=c++11 -fPIC -c ./src/lib/impModel.cpp -o ./bin/model.o
+
+# Not a target:
+test/functional/functional_tests.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=39/1024=4%, Rehash=0, Collisions=0/95=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 48 / storage = 819 B / avg = 17 B
+# current buf: size = 8162 B / used = 819 B / count = 48 / avg = 17 B
+
+# strcache performance: lookups = 83 / hit rate = 42%
+# hash-table stats:
+# Load=48/8192=1%, Rehash=0, Collisions=1/83=1%
+# Finished Make data base on Tue May 31 17:09:56 2022
+
+ 

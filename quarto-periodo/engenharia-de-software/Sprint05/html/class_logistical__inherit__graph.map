@@ -1,0 +1,5 @@
+<map id="Logistical" name="Logistical">
+<area shape="rect" id="node1" title="Logistical Class." alt="" coords="5,579,125,685"/>
+<area shape="rect" id="node2" href="$class_imp_flow.html" title="ImpFlow Class." alt="" coords="9,248,122,531"/>
+<area shape="rect" id="node3" href="$class_flow.html" title="Flow Interface." alt="" coords="9,5,121,200"/>
+</map>

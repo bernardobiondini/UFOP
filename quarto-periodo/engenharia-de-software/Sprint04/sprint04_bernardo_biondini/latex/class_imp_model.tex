@@ -1,0 +1,447 @@
+\hypertarget{class_imp_model}{}\doxysection{Imp\+Model Class Reference}
+\label{class_imp_model}\index{ImpModel@{ImpModel}}
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Class.  
+
+
+
+
+{\ttfamily \#include $<$imp\+Model.\+hpp$>$}
+
+
+
+Inheritance diagram for Imp\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_imp_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Imp\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_imp_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{system\+Iterator}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_system}{System}} Iterator Typedef. \end{DoxyCompactList}\item 
+typedef vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flow\+Iterator}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Iterator Typedef. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_imp_model_a23c41c251e2fd28e872f29660c495177}{Imp\+Model}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imp_model_a1c4cefa053f028bcd8a01a2940452869}{Imp\+Model}} (\mbox{\hyperlink{class_imp_model}{Imp\+Model}} \&copy)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Copy Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imp_model_a3f72684a358c625c7fa41ee9ef6c65a1}{$\sim$\+Imp\+Model}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Destructor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_imp_model_a4498580d41e39228017b6d94d8b3e4fc}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Get Name Method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{system\+Iterator}} \mbox{\hyperlink{class_imp_model_a2211cbfca4b722601e97fd5d224d41e6}{get\+Begin\+Systems}} ()
+\begin{DoxyCompactList}\small\item\em Get the Begin Systems. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{system\+Iterator}} \mbox{\hyperlink{class_imp_model_a69b4253b442a026a4854e5e0ee11638c}{get\+End\+Systems}} ()
+\begin{DoxyCompactList}\small\item\em Get the End Systems. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flow\+Iterator}} \mbox{\hyperlink{class_imp_model_ad14a714c2752f30804207a2fcce0f0e8}{get\+Begin\+Flows}} ()
+\begin{DoxyCompactList}\small\item\em Get the Begin Flows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{flow\+Iterator}} \mbox{\hyperlink{class_imp_model_a6b2aac32ef6457143d09166f659f03c8}{get\+End\+Flows}} ()
+\begin{DoxyCompactList}\small\item\em Get the End Flows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imp_model_a9ebeebbe8d3d76f23f7fed40d30c47ee}{set\+Name}} (string \mbox{\hyperlink{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}{name}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Set Name Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imp_model_a9b9ad9aacb0b3a2a4f043063c6176b8c}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$system)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Add Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imp_model_a647811be59e4745c1e9ead181012b2a3}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$flow)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Add Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imp_model_a7c7aa99561abc1aa800c7ba6e6a614cb}{execute}} (double initial\+\_\+time, double final\+\_\+time, int incr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Execute Method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} \& \mbox{\hyperlink{class_imp_model_a569199ab98ee3c40c6e7e8ec8319d32a}{operator=}} (\mbox{\hyperlink{class_imp_model}{Imp\+Model}} \&model)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imp_model}{Imp\+Model}} Assignment Operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$ \mbox{\hyperlink{class_imp_model_ad079bed69449388136e5771b11d1149c}{systems}}
+\item 
+vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$ \mbox{\hyperlink{class_imp_model_a37dc0f6bd093ae85cae6cf1d6ebfdfc7}{flows}}
+\item 
+string \mbox{\hyperlink{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}{name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Class. 
+
+Implementation class of \mbox{\hyperlink{class_model}{Model}} Interface. Represents a set of \mbox{\hyperlink{class_system}{System(s)}} and/or \mbox{\hyperlink{class_flow}{Flow(s)}}. It\textquotesingle{}s responsible for execution and for set up the operation and workflow of values. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}\label{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}} 
+\index{ImpModel@{ImpModel}!flowIterator@{flowIterator}}
+\index{flowIterator@{flowIterator}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{flowIterator}{flowIterator}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{class_flow}{Flow}}$\ast$$>$\+::iterator \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{Imp\+Model\+::flow\+Iterator}}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Iterator Typedef. 
+
+Responsible for define a type for the Iterator \mbox{\Hypertarget{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}\label{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}} 
+\index{ImpModel@{ImpModel}!systemIterator@{systemIterator}}
+\index{systemIterator@{systemIterator}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{systemIterator}{systemIterator}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{class_system}{System}}$\ast$$>$\+::iterator \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{Imp\+Model\+::system\+Iterator}}}
+
+
+
+\mbox{\hyperlink{class_system}{System}} Iterator Typedef. 
+
+Responsible for define a type for the Iterator 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_imp_model_a23c41c251e2fd28e872f29660c495177}\label{class_imp_model_a23c41c251e2fd28e872f29660c495177}} 
+\index{ImpModel@{ImpModel}!ImpModel@{ImpModel}}
+\index{ImpModel@{ImpModel}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{ImpModel()}{ImpModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Imp\+Model\+::\+Imp\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Default Constructor. 
+
+Following the Canonical Class Form
+
+Attributes a empty string to the name \mbox{\Hypertarget{class_imp_model_a1c4cefa053f028bcd8a01a2940452869}\label{class_imp_model_a1c4cefa053f028bcd8a01a2940452869}} 
+\index{ImpModel@{ImpModel}!ImpModel@{ImpModel}}
+\index{ImpModel@{ImpModel}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{ImpModel()}{ImpModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Imp\+Model\+::\+Imp\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imp_model}{Imp\+Model}} \&}]{copy }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Copy Constructor. 
+
+Following the Canonical Class Form 
+\begin{DoxyParams}{Parameters}
+{\em copy} & make a copy of another model\\
+\hline
+\end{DoxyParams}
+All of the attributes will receive its values from the copy attributes 
+\begin{DoxyParams}{Parameters}
+{\em copy} & make a copy of another model \\
+\hline
+\end{DoxyParams}
+put all the flows of copy model into this object
+
+put all the systems of copy model into this object
+
+\texorpdfstring{$<$}{<} This name receive the copy nameHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_imp_model_a1c4cefa053f028bcd8a01a2940452869_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_imp_model_a3f72684a358c625c7fa41ee9ef6c65a1}\label{class_imp_model_a3f72684a358c625c7fa41ee9ef6c65a1}} 
+\index{ImpModel@{ImpModel}!````~ImpModel@{$\sim$ImpModel}}
+\index{````~ImpModel@{$\sim$ImpModel}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$ImpModel()}{~ImpModel()}}
+{\footnotesize\ttfamily Imp\+Model\+::$\sim$\+Imp\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Destructor. 
+
+Following the Canonical Class Form
+
+Clear the vectors 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_imp_model_a647811be59e4745c1e9ead181012b2a3}\label{class_imp_model_a647811be59e4745c1e9ead181012b2a3}} 
+\index{ImpModel@{ImpModel}!add@{add}}
+\index{add@{add}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Imp\+Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Add Method. 
+
+This method uses Overloading concept, wether the parameter is a \mbox{\hyperlink{class_flow}{Flow}} or a \mbox{\hyperlink{class_system}{System}} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_system}{System}}} & push a \mbox{\hyperlink{class_flow}{Flow}} into the \mbox{\hyperlink{class_flow}{Flow}} vector \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_model_ab7df81041f62f049cfc6e4d50dcaf721}{Model}}.
+
+\mbox{\Hypertarget{class_imp_model_a9b9ad9aacb0b3a2a4f043063c6176b8c}\label{class_imp_model_a9b9ad9aacb0b3a2a4f043063c6176b8c}} 
+\index{ImpModel@{ImpModel}!add@{add}}
+\index{add@{add}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Imp\+Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Add Method. 
+
+This method uses Overloading concept, wether the parameter is a \mbox{\hyperlink{class_system}{System}} or a \mbox{\hyperlink{class_flow}{Flow}} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_system}{System}}} & push a \mbox{\hyperlink{class_system}{System}} into the \mbox{\hyperlink{class_system}{System}} vector \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_model_afde6c25ab942f2eec7aedeaf8eec53fd}{Model}}.
+
+\mbox{\Hypertarget{class_imp_model_a7c7aa99561abc1aa800c7ba6e6a614cb}\label{class_imp_model_a7c7aa99561abc1aa800c7ba6e6a614cb}} 
+\index{ImpModel@{ImpModel}!execute@{execute}}
+\index{execute@{execute}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Imp\+Model\+::execute (\begin{DoxyParamCaption}\item[{double}]{initial\+\_\+time,  }\item[{double}]{final\+\_\+time,  }\item[{int}]{incr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Execute Method. 
+
+\begin{DoxyWarning}{Warning}
+Execute method is the main method of \mbox{\hyperlink{class_model}{Model}},responsible for controlling the flow and the results of \mbox{\hyperlink{class_model}{Model}}\textquotesingle{}s dynamics 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+time} & \\
+\hline
+{\em final\+\_\+time} & \\
+\hline
+{\em incr} & how much the program will increment, simulates time \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Make a vector of returned flows execute method value
+
+\texorpdfstring{$<$}{<} remove the value vector value from the source value
+
+\texorpdfstring{$<$}{<} add the value vector from to target value
+
+Implements \mbox{\hyperlink{class_model_a70513e5e8af960c7e5d05cb151d18193}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_imp_model_a7c7aa99561abc1aa800c7ba6e6a614cb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_imp_model_ad14a714c2752f30804207a2fcce0f0e8}\label{class_imp_model_ad14a714c2752f30804207a2fcce0f0e8}} 
+\index{ImpModel@{ImpModel}!getBeginFlows@{getBeginFlows}}
+\index{getBeginFlows@{getBeginFlows}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{getBeginFlows()}{getBeginFlows()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{Imp\+Model\+::flow\+Iterator}} Imp\+Model\+::get\+Begin\+Flows (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Begin Flows. 
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Get\+Begin\+Flows Method.
+
+Returns the Beginning of \mbox{\hyperlink{class_flow}{Flow}}\textquotesingle{}s vector \begin{DoxyReturn}{Returns}
+flow\+Iterator
+\end{DoxyReturn}
+Return the begin of the \mbox{\hyperlink{class_flow}{Flow}} vector \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{Imp\+Model\+::flow\+Iterator}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_model_a9133f8c44469814a2c53eda3b07a6e29}{Model}}.
+
+\mbox{\Hypertarget{class_imp_model_a2211cbfca4b722601e97fd5d224d41e6}\label{class_imp_model_a2211cbfca4b722601e97fd5d224d41e6}} 
+\index{ImpModel@{ImpModel}!getBeginSystems@{getBeginSystems}}
+\index{getBeginSystems@{getBeginSystems}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{getBeginSystems()}{getBeginSystems()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{Imp\+Model\+::system\+Iterator}} Imp\+Model\+::get\+Begin\+Systems (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Begin Systems. 
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Get\+Begin\+Systems Method.
+
+Returns the Beginning of \mbox{\hyperlink{class_system}{System}}\textquotesingle{}s vector \begin{DoxyReturn}{Returns}
+system\+Iterator
+\end{DoxyReturn}
+Return the begin of the \mbox{\hyperlink{class_system}{System}} vector \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{Imp\+Model\+::system\+Iterator}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_model_affb4741202c5857bfca344cc2d03d257}{Model}}.
+
+\mbox{\Hypertarget{class_imp_model_a6b2aac32ef6457143d09166f659f03c8}\label{class_imp_model_a6b2aac32ef6457143d09166f659f03c8}} 
+\index{ImpModel@{ImpModel}!getEndFlows@{getEndFlows}}
+\index{getEndFlows@{getEndFlows}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{getEndFlows()}{getEndFlows()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{Imp\+Model\+::flow\+Iterator}} Imp\+Model\+::get\+End\+Flows (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the End Flows. 
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Get\+End\+Flows Method.
+
+Returns the Ending of \mbox{\hyperlink{class_flow}{Flow}}\textquotesingle{}s vector \begin{DoxyReturn}{Returns}
+flow\+Iterator
+\end{DoxyReturn}
+Return the end of the \mbox{\hyperlink{class_flow}{Flow}} vector \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_imp_model_ad8e9ea7f28cb595c586bbbda1ebef15e}{Imp\+Model\+::flow\+Iterator}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_model_ae127f08623bfae80ca97e89878af3e41}{Model}}.
+
+\mbox{\Hypertarget{class_imp_model_a69b4253b442a026a4854e5e0ee11638c}\label{class_imp_model_a69b4253b442a026a4854e5e0ee11638c}} 
+\index{ImpModel@{ImpModel}!getEndSystems@{getEndSystems}}
+\index{getEndSystems@{getEndSystems}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{getEndSystems()}{getEndSystems()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{Imp\+Model\+::system\+Iterator}} Imp\+Model\+::get\+End\+Systems (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the End Systems. 
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Get\+End\+Systems Method.
+
+Returns the Ending of \mbox{\hyperlink{class_system}{System}}\textquotesingle{}s vector \begin{DoxyReturn}{Returns}
+system\+Iterator
+\end{DoxyReturn}
+Return the end of the \mbox{\hyperlink{class_system}{System}} vector \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_imp_model_a2e34eb877a2550ac5a9abd1f5778b6cc}{Imp\+Model\+::system\+Iterator}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_model_a80fa0d8dfd55dada0c2177c18006bc96}{Model}}.
+
+\mbox{\Hypertarget{class_imp_model_a4498580d41e39228017b6d94d8b3e4fc}\label{class_imp_model_a4498580d41e39228017b6d94d8b3e4fc}} 
+\index{ImpModel@{ImpModel}!getName@{getName}}
+\index{getName@{getName}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Imp\+Model\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Get Name Method. 
+
+Returns the model\textquotesingle{}s name \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_model_aa5365ab557ae47efffdf14ba7a46dac8}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_imp_model_a4498580d41e39228017b6d94d8b3e4fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_imp_model_a569199ab98ee3c40c6e7e8ec8319d32a}\label{class_imp_model_a569199ab98ee3c40c6e7e8ec8319d32a}} 
+\index{ImpModel@{ImpModel}!operator=@{operator=}}
+\index{operator=@{operator=}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imp_model}{Imp\+Model}} \& Imp\+Model\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imp_model}{Imp\+Model}} \&}]{model }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Assignment Operator. 
+
+Following the Canonical Class Form 
+\begin{DoxyParams}{Parameters}
+{\em model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}}\& 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Verify if they are alredy the same
+
+\texorpdfstring{$<$}{<} In case they are the same, just return this
+
+\texorpdfstring{$<$}{<} Name of the object receive the parameter object name
+
+\texorpdfstring{$<$}{<} clear the vector of flows
+
+\texorpdfstring{$<$}{<} clear the vector of systems
+
+put all the flows of copy model into this object
+
+put all the systems of copy model into this objectHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_imp_model_a569199ab98ee3c40c6e7e8ec8319d32a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_imp_model_a9ebeebbe8d3d76f23f7fed40d30c47ee}\label{class_imp_model_a9ebeebbe8d3d76f23f7fed40d30c47ee}} 
+\index{ImpModel@{ImpModel}!setName@{setName}}
+\index{setName@{setName}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Imp\+Model\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_imp_model}{Imp\+Model}} Set Name Method. 
+
+Receive a string as a parameter and attributes it to model\textquotesingle{}s name 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the model \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_model_a7ff2a777eee13d63c6a309f51259f80a}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_imp_model_a9ebeebbe8d3d76f23f7fed40d30c47ee_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_imp_model_a37dc0f6bd093ae85cae6cf1d6ebfdfc7}\label{class_imp_model_a37dc0f6bd093ae85cae6cf1d6ebfdfc7}} 
+\index{ImpModel@{ImpModel}!flows@{flows}}
+\index{flows@{flows}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_flow}{Flow}}$\ast$$>$ Imp\+Model\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector of Flows \mbox{\Hypertarget{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}\label{class_imp_model_aaf248f620f32122fac8cbfa07ded0581}} 
+\index{ImpModel@{ImpModel}!name@{name}}
+\index{name@{name}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Imp\+Model\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_model}{Model}} name \mbox{\Hypertarget{class_imp_model_ad079bed69449388136e5771b11d1149c}\label{class_imp_model_ad079bed69449388136e5771b11d1149c}} 
+\index{ImpModel@{ImpModel}!systems@{systems}}
+\index{systems@{systems}!ImpModel@{ImpModel}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_system}{System}}$\ast$$>$ Imp\+Model\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector of Systems 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{imp_model_8hpp}{imp\+Model.\+hpp}}\item 
+src/\mbox{\hyperlink{imp_model_8cpp}{imp\+Model.\+cpp}}\end{DoxyCompactItemize}

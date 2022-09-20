@@ -1,0 +1,272 @@
+\hypertarget{class_flow}{}\doxysection{Flow Class Reference}
+\label{class_flow}\index{Flow@{Flow}}
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Interface.  
+
+
+
+
+{\ttfamily \#include $<$flow.\+hpp$>$}
+
+
+
+Inheritance diagram for Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_flow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{$\sim$\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Destructor. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_flow_aa91a8025b6dbb27ee5137c7c9ad0c564}{get\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Get Name Method. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{get\+Source}} () const =0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Get Source Method. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{get\+Target}} () const =0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Get Target Method. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_flow_abb883bbe7937aa6df714cf1c364aa049}{set\+Name}} (string name)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Set Name Method. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_flow_a42ce99a961622788ae59bb73abad3bb3}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} $\ast$source)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Set Source \mbox{\hyperlink{class_system}{System}} Method. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_flow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} $\ast$target)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Set Target \mbox{\hyperlink{class_system}{System}} Method. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_flow_a02f2ba282534e3f0756a4e4dbefa7795}{conect}} (\mbox{\hyperlink{class_system}{System}} $\ast$, \mbox{\hyperlink{class_system}{System}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flow}{Flow}} Conect Method. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_flow_a59a51b935f1e72373f6a94aa3ccaf981}{execute}} () const =0
+\begin{DoxyCompactList}\small\item\em Virtual \mbox{\hyperlink{class_flow}{Flow}} Execute Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_flow}{Flow}} Interface. 
+
+Responsible for define the \mbox{\hyperlink{class_flow}{Flow}} structure, its methods but not the implementation 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_flow_a325d284a50ca3274b126b21f5c39b9af}\label{class_flow_a325d284a50ca3274b126b21f5c39b9af}} 
+\index{Flow@{Flow}!````~Flow@{$\sim$Flow}}
+\index{````~Flow@{$\sim$Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{$\sim$Flow()}{~Flow()}}
+{\footnotesize\ttfamily virtual Flow\+::$\sim$\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flow_a02f2ba282534e3f0756a4e4dbefa7795}\label{class_flow_a02f2ba282534e3f0756a4e4dbefa7795}} 
+\index{Flow@{Flow}!conect@{conect}}
+\index{conect@{conect}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{conect()}{conect()}}
+{\footnotesize\ttfamily virtual void Flow\+::conect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Conect Method. 
+
+Receive two Systems as parameters and attributes it to flow\textquotesingle{}s source and flowś target 
+\begin{DoxyParams}{Parameters}
+{\em source} & input system of the flow \\
+\hline
+{\em target} & output system of the flow \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_imp_flow_a7c5374d9ea51932668179855b16a92f7}{Imp\+Flow}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_a02f2ba282534e3f0756a4e4dbefa7795_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_a59a51b935f1e72373f6a94aa3ccaf981}\label{class_flow_a59a51b935f1e72373f6a94aa3ccaf981}} 
+\index{Flow@{Flow}!execute@{execute}}
+\index{execute@{execute}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual double Flow\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual \mbox{\hyperlink{class_flow}{Flow}} Execute Method. 
+
+This method will be implemented by class\textquotesingle{}s children. It\textquotesingle{}s responsible for return the value which the target system will receive considering the value that the source contains \begin{DoxyReturn}{Returns}
+double is going to be used to modify a value 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_exponential_ad6ce75fa7de902a4e30b944457109e10}{Exponential}}, \mbox{\hyperlink{class_logistical_a490e0774338bd30c062e88d51d72be23}{Logistical}}, \mbox{\hyperlink{class_complex_a715fc69ea0fd850cde81fcdeaff25f78}{Complex}}, and \mbox{\hyperlink{class_imp_flow_a68fa98af9ef6f236bfdce24c92ff5e04}{Imp\+Flow}}.
+
+\mbox{\Hypertarget{class_flow_aa91a8025b6dbb27ee5137c7c9ad0c564}\label{class_flow_aa91a8025b6dbb27ee5137c7c9ad0c564}} 
+\index{Flow@{Flow}!getName@{getName}}
+\index{getName@{getName}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string Flow\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Get Name Method. 
+
+Returns the flow\textquotesingle{}s name \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_imp_flow_af83b08240d7fec2765a418623425eab1}{Imp\+Flow}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_aa91a8025b6dbb27ee5137c7c9ad0c564_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}\label{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}} 
+\index{Flow@{Flow}!getSource@{getSource}}
+\index{getSource@{getSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Get Source Method. 
+
+Returns the source system of the flow \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_system}{System}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_imp_flow_a04cbab03ebab90c10924516163f3fd15}{Imp\+Flow}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}\label{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}} 
+\index{Flow@{Flow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Get Target Method. 
+
+Returns the target system of the flow \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_system}{System}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_imp_flow_a3330ec15c3bec241308b950b0b7b53fa}{Imp\+Flow}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_abb883bbe7937aa6df714cf1c364aa049}\label{class_flow_abb883bbe7937aa6df714cf1c364aa049}} 
+\index{Flow@{Flow}!setName@{setName}}
+\index{setName@{setName}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Set Name Method. 
+
+Receive a string as a parameter and attributes it to flow\textquotesingle{}s name 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the flow \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_imp_flow_a9ba1bddcbfe1f0c7c7b5efc9487f4a9a}{Imp\+Flow}}.
+
+\mbox{\Hypertarget{class_flow_a42ce99a961622788ae59bb73abad3bb3}\label{class_flow_a42ce99a961622788ae59bb73abad3bb3}} 
+\index{Flow@{Flow}!setSource@{setSource}}
+\index{setSource@{setSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Set Source \mbox{\hyperlink{class_system}{System}} Method. 
+
+Receive a \mbox{\hyperlink{class_system}{System}} as a parameter and attributes it to flow\textquotesingle{}s source 
+\begin{DoxyParams}{Parameters}
+{\em source} & input system of the flow \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_imp_flow_adeac7fe0c80012a4422b07446b64db50}{Imp\+Flow}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_a42ce99a961622788ae59bb73abad3bb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}\label{class_flow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}} 
+\index{Flow@{Flow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_flow}{Flow}} Set Target \mbox{\hyperlink{class_system}{System}} Method. 
+
+Receive a \mbox{\hyperlink{class_system}{System}} as a parameter and attributes it to flow\textquotesingle{}s target 
+\begin{DoxyParams}{Parameters}
+{\em target} & output system of the flow \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_imp_flow_a457997de9215d72b1d42c805316a141c}{Imp\+Flow}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_a6121cf6e400af1aa8b4c9f9f2dc8e68b_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{flow_8hpp}{flow.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,313 @@
+\hypertarget{class_model}{}\doxysection{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+\mbox{\hyperlink{class_model}{Model}} Class.  
+
+
+
+
+{\ttfamily \#include $<$model.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a0c4f7d28c98a1c375e8620a6bceb81de}{Model}} (\mbox{\hyperlink{class_model}{Model}} \&copy)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Copy Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Virtual \mbox{\hyperlink{class_model}{Model}} Destructor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_model_a65e1711255fbab5883708002ef89f773}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Get Name Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_ab896e48784c1248b8bf452f3ce3a9d59}{set\+Flows}} (vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$ new\+Flows)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Set Vector of Flows Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a1fc829bcb8e68432d7bdc60cb7470793}{set\+Systems}} (vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$ new\+Systems)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Set Vector of Systems Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$system)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Add Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_ab69613bde0ace81c92bbf519660ccb2c}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$flow)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Add Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a84b0cebc475270c643a1bbedbf22dbdd}{execute}} (double initial\+\_\+time, double final\+\_\+time, int incr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Execute Method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model}{Model}} \& \mbox{\hyperlink{class_model_aa1e198062877140bf50c2c86d6e20634}{operator=}} (\mbox{\hyperlink{class_model}{Model}} \&model)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_model}{Model}} Assignment Operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$ \mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}}
+\item 
+vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$ \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}
+\item 
+string \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_model}{Model}} Class. 
+
+Represents a set of \mbox{\hyperlink{class_system}{System(s)}} and/or \mbox{\hyperlink{class_flow}{Flow(s)}}. It\textquotesingle{}s responsible for execution and for set up the operation and workflow of values. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Default Constructor. 
+
+Following the Canonical Class Form
+
+Attributes a empty string to the name \mbox{\Hypertarget{class_model_a0c4f7d28c98a1c375e8620a6bceb81de}\label{class_model_a0c4f7d28c98a1c375e8620a6bceb81de}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_model}{Model}} \&}]{copy }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Copy Constructor. 
+
+Following the Canonical Class Form 
+\begin{DoxyParams}{Parameters}
+{\em copy} & make a copy of another model\\
+\hline
+\end{DoxyParams}
+All of the attributes will receive its values from the copy attributes 
+\begin{DoxyParams}{Parameters}
+{\em copy} & make a copy of another model \\
+\hline
+\end{DoxyParams}
+put all the flows of copy model into this object
+
+put all the systems of copy model into this object
+
+\texorpdfstring{$<$}{<} This name receive the copy nameHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_model_a0c4f7d28c98a1c375e8620a6bceb81de_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\index{Model@{Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual \mbox{\hyperlink{class_model}{Model}} Destructor. 
+
+\mbox{\hyperlink{class_model}{Model}} Destructor.
+
+Following the Canonical Class Form
+
+Clear the vectors 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_ab69613bde0ace81c92bbf519660ccb2c}\label{class_model_ab69613bde0ace81c92bbf519660ccb2c}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{flow }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Add Method. 
+
+This method uses Overloading concept, wether the parameter is a \mbox{\hyperlink{class_flow}{Flow}} or a \mbox{\hyperlink{class_system}{System}} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_system}{System}}} & push a \mbox{\hyperlink{class_flow}{Flow}} into the \mbox{\hyperlink{class_flow}{Flow}} vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a302d4ed93c6e6f9a0f728e021a91f821}\label{class_model_a302d4ed93c6e6f9a0f728e021a91f821}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Add Method. 
+
+This method uses Overloading concept, wether the parameter is a \mbox{\hyperlink{class_system}{System}} or a \mbox{\hyperlink{class_flow}{Flow}} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_system}{System}}} & push a \mbox{\hyperlink{class_system}{System}} into the \mbox{\hyperlink{class_system}{System}} vector \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a302d4ed93c6e6f9a0f728e021a91f821_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_a84b0cebc475270c643a1bbedbf22dbdd}\label{class_model_a84b0cebc475270c643a1bbedbf22dbdd}} 
+\index{Model@{Model}!execute@{execute}}
+\index{execute@{execute}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Model\+::execute (\begin{DoxyParamCaption}\item[{double}]{initial\+\_\+time,  }\item[{double}]{final\+\_\+time,  }\item[{int}]{incr }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Execute Method. 
+
+\begin{DoxyWarning}{Warning}
+Execute method is the main method of \mbox{\hyperlink{class_model}{Model}},responsible for controlling the flow and the results of \mbox{\hyperlink{class_model}{Model}}\textquotesingle{}s dynamics 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+time} & \\
+\hline
+{\em final\+\_\+time} & \\
+\hline
+{\em incr} & how much the program will increment, simulates time \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Make a vector of returned flows execute method value
+
+\texorpdfstring{$<$}{<} remove the value vector value from the source value
+
+\texorpdfstring{$<$}{<} add the value vector from to target valueHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_model_a84b0cebc475270c643a1bbedbf22dbdd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a84b0cebc475270c643a1bbedbf22dbdd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_a65e1711255fbab5883708002ef89f773}\label{class_model_a65e1711255fbab5883708002ef89f773}} 
+\index{Model@{Model}!getName@{getName}}
+\index{getName@{getName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Model\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Get Name Method. 
+
+Returns the model\textquotesingle{}s name \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_model_a65e1711255fbab5883708002ef89f773_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_aa1e198062877140bf50c2c86d6e20634}\label{class_model_aa1e198062877140bf50c2c86d6e20634}} 
+\index{Model@{Model}!operator=@{operator=}}
+\index{operator=@{operator=}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model}{Model}} \& Model\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_model}{Model}} \&}]{model }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Assignment Operator. 
+
+Following the Canonical Class Form 
+\begin{DoxyParams}{Parameters}
+{\em model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_model}{Model}}\& 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Verify if they are alredy the same
+
+\texorpdfstring{$<$}{<} In case they are the same, just return this
+
+\texorpdfstring{$<$}{<} Name of the object receive the parameter object name
+
+\texorpdfstring{$<$}{<} clear the vector of flows
+
+\texorpdfstring{$<$}{<} clear the vector of systems
+
+put all the flows of copy model into this object
+
+put all the systems of copy model into this objectHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_model_aa1e198062877140bf50c2c86d6e20634_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_ab896e48784c1248b8bf452f3ce3a9d59}\label{class_model_ab896e48784c1248b8bf452f3ce3a9d59}} 
+\index{Model@{Model}!setFlows@{setFlows}}
+\index{setFlows@{setFlows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setFlows()}{setFlows()}}
+{\footnotesize\ttfamily void Model\+::set\+Flows (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$}]{new\+Flows }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Set Vector of Flows Method. 
+
+Receives a vector of Flows as parameter and attributes it to flows 
+\begin{DoxyParams}{Parameters}
+{\em new\+Flows} & vector of Flows \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a1fc829bcb8e68432d7bdc60cb7470793}\label{class_model_a1fc829bcb8e68432d7bdc60cb7470793}} 
+\index{Model@{Model}!setSystems@{setSystems}}
+\index{setSystems@{setSystems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setSystems()}{setSystems()}}
+{\footnotesize\ttfamily void Model\+::set\+Systems (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$}]{new\+Systems }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_model}{Model}} Set Vector of Systems Method. 
+
+Receives a vector of Systems as parameter and attributes it to systems 
+\begin{DoxyParams}{Parameters}
+{\em new\+Systems} & vector of Systems\\
+\hline
+\end{DoxyParams}
+Receives a vector of Systems as parameter and attributes it to flows 
+\begin{DoxyParams}{Parameters}
+{\em new\+Systems} & vector of Flows \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}\label{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}} 
+\index{Model@{Model}!flows@{flows}}
+\index{flows@{flows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_flow}{Flow}}$\ast$$>$ Model\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector of Flows \mbox{\Hypertarget{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}\label{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}} 
+\index{Model@{Model}!name@{name}}
+\index{name@{name}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Model\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_model}{Model}} name \mbox{\Hypertarget{class_model_ac7dea8829149e597d2671dbc0a538bf7}\label{class_model_ac7dea8829149e597d2671dbc0a538bf7}} 
+\index{Model@{Model}!systems@{systems}}
+\index{systems@{systems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_system}{System}}$\ast$$>$ Model\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector of Systems 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{model_8hpp}{model.\+hpp}}\item 
+src/\mbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}

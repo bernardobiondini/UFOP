@@ -1,0 +1,9 @@
+<map id="SystemBody::setName" name="SystemBody::setName">
+<area shape="rect" id="node1" title="SystemBody Set Name Method." alt="" coords="803,56,973,83"/>
+<area shape="rect" id="node2" href="$class_system_handle.html#aa8da8c60723c4a7dd3457419a2527c4f" title="Set the Name object." alt="" coords="553,5,737,32"/>
+<area shape="rect" id="node3" href="$class_system_handle.html#ac94c5ab22ad29936f30a8dce7c401986" title="Construct a new System Handle object." alt="" coords="535,56,755,83"/>
+<area shape="rect" id="node4" href="$unit___system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Unit System SetName Test." alt="" coords="560,107,729,133"/>
+<area shape="rect" id="node5" href="$unit___system_8cpp.html#a508d8501edd77719732fca2f7985d316" title=" " alt="" coords="324,107,487,133"/>
+<area shape="rect" id="node6" href="$unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a" title="Run Unit Tests Globals." alt="" coords="108,107,276,133"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main." alt="" coords="5,107,60,133"/>
+</map>

@@ -1,0 +1,164 @@
+\hypertarget{functional__tests_8cpp}{}\doxysection{test/functional/functional\+\_\+tests.cpp File Reference}
+\label{functional__tests_8cpp}\index{test/functional/functional\_tests.cpp@{test/functional/functional\_tests.cpp}}
+{\ttfamily \#include \char`\"{}functional\+\_\+tests.\+hpp\char`\"{}}\newline
+Include dependency graph for functional\+\_\+tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{functional__tests_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{functional__tests_8cpp_a57aebf872d3602934e2d096173800f21}{functional\+Exponential\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Functional \mbox{\hyperlink{class_exponential}{Exponential}} Test Function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functional__tests_8cpp_a274eb68184ac1f073d506c966104a69a}{functional\+Logistical\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Functional \mbox{\hyperlink{class_logistical}{Logistical}} Test Function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functional__tests_8cpp_aea8574bc1077088562d27a1232007356}{functional\+Complex\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Functional \mbox{\hyperlink{class_complex}{Complex}} Test Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Bernardo Biondini 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 11, 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{functional__tests_8cpp_aea8574bc1077088562d27a1232007356}\label{functional__tests_8cpp_aea8574bc1077088562d27a1232007356}} 
+\index{functional\_tests.cpp@{functional\_tests.cpp}!functionalComplexTest@{functionalComplexTest}}
+\index{functionalComplexTest@{functionalComplexTest}!functional\_tests.cpp@{functional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{functionalComplexTest()}{functionalComplexTest()}}
+{\footnotesize\ttfamily void functional\+Complex\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Functional \mbox{\hyperlink{class_complex}{Complex}} Test Function. 
+
+Verify if the dynamics of the model when the \mbox{\hyperlink{class_complex}{Complex}} flow is used works. It\textquotesingle{}s verified by assert function to guarantee the results. Instance Systems
+
+Instance \mbox{\hyperlink{class_complex}{Complex}} Flows
+
+Add Systems
+
+Add Flows
+
+\texorpdfstring{$<$}{<} Calls execute method to execute the model dynamics
+
+\texorpdfstring{$<$}{<} Assert value
+
+\texorpdfstring{$<$}{<} Assert value
+
+\texorpdfstring{$<$}{<} Assert value
+
+\texorpdfstring{$<$}{<} Assert value
+
+\texorpdfstring{$<$}{<} Assert valueHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional__tests_8cpp_aea8574bc1077088562d27a1232007356_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{functional__tests_8cpp_aea8574bc1077088562d27a1232007356_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{functional__tests_8cpp_a57aebf872d3602934e2d096173800f21}\label{functional__tests_8cpp_a57aebf872d3602934e2d096173800f21}} 
+\index{functional\_tests.cpp@{functional\_tests.cpp}!functionalExponentialTest@{functionalExponentialTest}}
+\index{functionalExponentialTest@{functionalExponentialTest}!functional\_tests.cpp@{functional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{functionalExponentialTest()}{functionalExponentialTest()}}
+{\footnotesize\ttfamily void functional\+Exponential\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Functional \mbox{\hyperlink{class_exponential}{Exponential}} Test Function. 
+
+Verify if the dynamics of the model when the \mbox{\hyperlink{class_exponential}{Exponential}} flow is used works. It\textquotesingle{}s verified by assert function to guarantee the results. \texorpdfstring{$<$}{<} Instance model
+
+\texorpdfstring{$<$}{<} Instance system (pop1)
+
+\texorpdfstring{$<$}{<} Instance system (pop2)
+
+\texorpdfstring{$<$}{<} Instance \mbox{\hyperlink{class_exponential}{Exponential}} flow with pop1 and pop2 as \mbox{\hyperlink{class_system}{System}}, source and target
+
+\texorpdfstring{$<$}{<} Add pop1 system to model systems
+
+\texorpdfstring{$<$}{<} Add pop2 system to model systems
+
+\texorpdfstring{$<$}{<} Add exponential flow to model flows
+
+\texorpdfstring{$<$}{<} Calls execute method to execute the model dynamics
+
+\texorpdfstring{$<$}{<} Assert value
+
+\texorpdfstring{$<$}{<} Assert valueHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional__tests_8cpp_a57aebf872d3602934e2d096173800f21_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{functional__tests_8cpp_a57aebf872d3602934e2d096173800f21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{functional__tests_8cpp_a274eb68184ac1f073d506c966104a69a}\label{functional__tests_8cpp_a274eb68184ac1f073d506c966104a69a}} 
+\index{functional\_tests.cpp@{functional\_tests.cpp}!functionalLogisticalTest@{functionalLogisticalTest}}
+\index{functionalLogisticalTest@{functionalLogisticalTest}!functional\_tests.cpp@{functional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{functionalLogisticalTest()}{functionalLogisticalTest()}}
+{\footnotesize\ttfamily void functional\+Logistical\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Functional \mbox{\hyperlink{class_logistical}{Logistical}} Test Function. 
+
+Verify if the dynamics of the model when the \mbox{\hyperlink{class_logistical}{Logistical}} flow is used works. It\textquotesingle{}s verified by assert function to guarantee the results. \texorpdfstring{$<$}{<} Instance model
+
+\texorpdfstring{$<$}{<} Instance system (pop1)
+
+\texorpdfstring{$<$}{<} Instance system (pop2)
+
+\texorpdfstring{$<$}{<} Instance \mbox{\hyperlink{class_logistical}{Logistical}} flow with pop1 and pop2 as \mbox{\hyperlink{class_system}{System}}, source and target
+
+\texorpdfstring{$<$}{<} Add pop1 system to model systems
+
+\texorpdfstring{$<$}{<} Add pop2 system to model systems
+
+\texorpdfstring{$<$}{<} Add logistical flow to model flows
+
+\texorpdfstring{$<$}{<} Calls execute method to execute the model dynamics
+
+\texorpdfstring{$<$}{<} Assert value
+
+\texorpdfstring{$<$}{<} Assert valueHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional__tests_8cpp_a274eb68184ac1f073d506c966104a69a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{functional__tests_8cpp_a274eb68184ac1f073d506c966104a69a_icgraph}
+\end{center}
+\end{figure}
